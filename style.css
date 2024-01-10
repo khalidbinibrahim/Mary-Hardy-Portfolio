@@ -100,6 +100,7 @@ nav a {
     color: #474747;
     margin-bottom: 0;
 }
+
 .banner-head {
     font-size: 85px;
     font-weight: 700;
@@ -109,6 +110,10 @@ nav a {
 
 .banner-para {
     margin-bottom: 25px;
+}
+
+.banner img {
+    width: 500px;
 }
 
 .about {
@@ -179,33 +184,35 @@ nav a {
     margin-top: 0px;
     margin-bottom: 20px;
 }
- .resume-container hr {
-    margin: 30px;
- }
 
- .download-cv {
+.resume-container hr {
+    margin: 30px;
+}
+
+.download-cv {
     text-align: center;
     margin-top: 50px;
- }
+}
 
- footer {
+footer {
     display: flex;
     gap: 115px;
     background: #FFF8F3;
     padding: 130px 230px;
     margin-top: 115px;
- }
+}
 
- .footer-column {
+.footer-column {
     width: 50%;
- }
+}
 
- .social-links a {
+.social-links a {
     margin-right: 25px;
- }
+}
 
- .contact input[type="text"], .contact input[type="email"],
- textarea {
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
     display: block;
     color: #757575;
     border-radius: 5px;
@@ -214,4 +221,76 @@ nav a {
     padding: 18px 35px;
     border: 0;
     width: 100%;
- }
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .header {
+        background-image: none;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+    
+    #what-i-do-des, .banner {
+        padding: 20px;
+    }
+
+    nav,
+    nav ul,
+    .banner,
+    .skills-container,
+    .resume-container,
+    .about-info-container,
+    footer {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .btn-primary {
+        margin-bottom: 5px;
+    }
+
+    footer, .about {
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    footer {
+        padding: 10px;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-primary {
+        margin-bottom: 5px;
+    }
+}
